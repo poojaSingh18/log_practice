@@ -1,0 +1,38 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+ 
+ img{
+ 
+ 	margin:0;
+ 	height:80px;
+ 	width:50px;
+ }
+
+ .heading a{
+ 	text-align: center;
+ 	font-weight: bold;
+ 	font-family: monospace;
+
+ }
+ #navi{
+ 	border-radius: 0px;
+ }
+ thead tr{
+	background-color: #ff9999;
+}
+ table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}

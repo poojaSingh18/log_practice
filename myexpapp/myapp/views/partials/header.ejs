@@ -1,0 +1,93 @@
+<div class="header">
+<nav class="navbar navbar-inverse" id="navi">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Tables_vs_Graphs</a>
+    </div>
+  </div>
+</nav>
+</div>
+<div ng-app="myjs" ng-controller="index" ng-cloak>
+<button class="btn btn-primary" ng-click = "worldP()">World Population</button>
+<button class="btn btn-primary" ng-click = "India_emp()">India Population</button>
+<button class="btn btn-primary" ng-click = "tax_pop()">India Tax vs Population</button>
+<button class="btn btn-primary" ng-click = "India_pop()">India Population</button>
+<div ng-hide='ishidden'>
+<table>
+<thead>
+<tr>
+<td>Country</td>
+<td>Population</td>
+</tr>
+</thead>
+<tbody>
+ <tr ng-repeat = "stuff in data" ng-class="{oddRow: $odd}">
+ <td>{{stuff.country}}</td>
+ <td>{{stuff.population}}</td>  
+   </tr>
+   </tbody>
+   </table>
+   </div>
+ 
+ <div ng-hide="isHidden" > 
+   <table>
+   <thead>
+   <tr>
+   <td>Country Name</td>
+   <td>Country Code</td>
+     <td>Series Name</td>
+     <td>Series Code</td>
+   <td>2000 [YR 2000]</td>
+     <td>2001 [YR 2001]</td>
+   <td>2002 [YR 2002]</td>
+     <td>2003 [YR 2003]</td>
+   <td>2004 [YR 2004]</td>
+     <td>2005 [YR 2005]</td>
+   <td>2006 [YR 2006]</td>
+     <td>2007 [YR 2007]</td>
+   <td>2008 [YR 2008]</td>
+     <td>2009 [YR 2009]</td>
+   <td>2010 [YR 2010]</td>
+    <td>2011 [YR 2011]</td>
+   <td>2012 [YR 2012]</td>
+   <td>2013 [YR 2013]</td>
+   <td>2014 [YR 2014]</td>
+   <td>Most Recent Value [YR20111]</td>
+
+  
+   </tr>
+   </thead>
+   <tbody>
+   <tr ng-repeat = "content in arr track by $index">
+<td>{{content.CountryName}}</td>
+    <td>{{content.CountryCode}}</td>
+    <td>{{content.SeriesName}}</td>
+    <td>{{content.SeriesCode}}</td>
+     <td>{{content.k2000YR2000}}</td>
+    <td>{{content.k2001YR2001}}</td>
+    <td>{{content.k2002YR2002}}</td>
+    <td>{{content.k2003YR2003}}</td>
+    <td>{{content.k2004YR2004}}</td>
+    <td>{{content.k2005YR2005}}</td>
+    <td>{{content.k2006YR2006}}</td>
+    <td>{{content.k2007YR2007}}</td>
+    <td>{{content.k2008YR2008}}</td>
+    <td>{{content.k2009YR2009}}</td>
+    <td>{{content.k2010YR2010}}</td>
+    <td>{{content.k2011YR2011}}</td>
+    <td>{{content.k2012YR2012}}</td>
+    <td>{{content.k2013YR2013}}</td>
+    <td>{{content.k2014YR2014}}</td>
+   
+    <td>{{content.MostRecentValueYR20111}}</td>
+   
+    
+   </tr>
+   </tbody>
+ 
+   </table>
+</div>
+
+</div>
+
+
